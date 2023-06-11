@@ -1,4 +1,4 @@
-const arithmeticForm = document.querySelector(".arithmetic-form");
+const huffmanForm = document.querySelector(".huffman-form");
 
 let value;
 let outputDataArray = [];
@@ -18,10 +18,10 @@ class BinaryTree {
     }
 }
 
-const handleArithmetic = (event) => {
+const huffmanCodingHandler = (event) => {
     let charMap = new Map();
     event.preventDefault();
-    let inputElement = document.querySelector(".arithmetic-input");
+    let inputElement = document.querySelector(".huffman-input");
     value = inputElement.value;
     inputElement.value = "";
 
@@ -149,4 +149,4 @@ const encodeData = (inputData) => {
     outputElement.textContent = encoded;
 }
 
-arithmeticForm.addEventListener("submit", handleArithmetic);
+huffmanForm.addEventListener("submit", huffmanCodingHandler);
